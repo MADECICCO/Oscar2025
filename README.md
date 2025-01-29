@@ -48,8 +48,28 @@ To incorporate these analyses into probabilistic calculation, we can use machine
 
     Simulation of Scenarios: Perform simulations of Monte Carlo to estimate the chances of each candidate, considering different levels of engagement and feelings 26.
 
-    Real-Time Adjustments: Update the model with real-time data during the awards season, adjusting the odds as new information arises 12.
-    
+    Real-Time Adjustments: Update the model with real-time data during the awards season, adjusting the odds as new information arises .
+
+    # 3.2 Step 2: Building the Model
+States of Markov Chain
+
+
+S0 : Actress not associated with a film in competition.
+S1: Film submitted to the Oscars by a country (Brazil).
+S2 : Pre-selected film for the shortlist.
+S3: Oscar-nominated film.
+S4 : Actress nominated in the category (Best Actress or Best Supporting Actress).
+S5: Oscar-winning actress.
+
+    Probabilities of Transition
+
+    Transitions calculated based on historical and social data:
+        P(S0->S1): Probability of Fernanda Torres participate in a film submitted by Brazil.
+        P(S1->S2): Brazilian film to be pre-selected.
+        P(S2-.S3): Brazilian film to be nominated for an Oscar.
+        P(S3-.S4): Actress of the indicated film to be recognized in the acting category.
+        P(S4->S5): Actress named win the statuette.
+        
 # Comparison with the Last 50 Years
 
     Atrizes Estrangeiras: Apenas 10% das vencedoras foram estrangeiras, com Marion Cotillard sendo a última em 2008.
@@ -59,3 +79,4 @@ To incorporate these analyses into probabilistic calculation, we can use machine
     Filmes em Língua Não Inglesa: Apenas 5% das vencedoras de Melhor Atriz atuaram em filmes não falados em inglês.
 
     -deepseek
+
