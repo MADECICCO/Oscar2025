@@ -38,7 +38,7 @@ Steps of the Model:
 
     Simulation: Perform Monte Carlo simulations to estimate the chances of each candidate. 
 
-# Comparação com os Últimos 50 Anos
+# Comparison with the Last 50 Years
 
     Atrizes Estrangeiras: Apenas 10% das vencedoras foram estrangeiras, com Marion Cotillard sendo a última em 2008.
 
