@@ -38,6 +38,18 @@ Steps of the Model:
 
     Simulation: Perform Monte Carlo simulations to estimate the chances of each candidate. 
 
+# 3.1 Integration with the Probabilistic Model
+
+To incorporate these analyses into probabilistic calculation, we can use machine learning techniques, such as logistic regression and neural networks, to correlate engagement metrics, feelings and performance in previous awards.
+
+# 3.2 Steps of the Model:
+
+    Model Training: Use historical data from marketing campaigns, social media sentiments and Oscar results to train the model.
+
+    Simulation of Scenarios: Perform simulations of Monte Carlo to estimate the chances of each candidate, considering different levels of engagement and feelings 26.
+
+    Real-Time Adjustments: Update the model with real-time data during the awards season, adjusting the odds as new information arises 12.
+    
 # Comparison with the Last 50 Years
 
     Atrizes Estrangeiras: Apenas 10% das vencedoras foram estrangeiras, com Marion Cotillard sendo a última em 2008.
