@@ -5,13 +5,17 @@
 # and influencer impact analysis to enhance the calculation of probabilities for Fernanda Torres
 # and other actresses winning the 2025 Oscar for Best Actress.
 # The script uses libraries like tweepy for Twitter, facebook-sdk for Facebook,
-# and TextBlob for sentiment analysis. It also incorporates influencer impact metrics based on social media engagement.
+# and TextBlob for sentiment analysis.
+#  It also incorporates influencer impact metrics based on social media engagement.
 
 import tweepy
 import facebook
 from textblob import TextBlob
 import pandas as pd
 import numpy as np
+
+
+
 
 # API Keys and Tokens (Replace with your own credentials)
 TWITTER_API_KEY = 'your_twitter_api_key'
@@ -43,7 +47,7 @@ def fetch_twitter_engagement(handle):
         tweets = twitter_api.user_timeline(screen_name=handle, count=10, tweet_mode="extended")
         engagement = sum([tweet.favorite_count + tweet.retweet_count for tweet in tweets])
         return engagement
-    except tweepy.TweepError as e:
+    except tweepy.errors.TweepyException as e:
         print(f"Error fetching Twitter data for {handle}: {e}")
         return 0
 
